@@ -1,0 +1,26 @@
+.logo {
+    max-width: 300px;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
+
+.navbar {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    font-size: x-large;
+}
+
+.carousel-inner
+{
+    width: 95% ; 
+    margin:auto;
+}
