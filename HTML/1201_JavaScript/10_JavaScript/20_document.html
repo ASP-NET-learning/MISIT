@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <h4 id="apple">apple</h4>
+    <h4 id="apple">AAA</h4>
+    <h4 id="tako">tako</h4>
+    <h4 id="kfp">kfp</h4>
+    
+    <p><a href="https://www.w3schools.com/jsref/dom_obj_document.asp">https://www.w3schools.com/jsref/dom_obj_document.asp</a></p>
+    
+    <script>
+        // 10. 底下程式碼請逐一取消註解，並查看結果
+        
+        console.log("皮卡丘");
+        document.write("<h1>皮卡丘</h1>")
+        // console.log(document.head);
+        // console.log(document.body);
+        // console.log(document.body.h4);物件.方法
+        console.log(document.getElementsByTagName("apple"));
+        document.write(document.getElementsByTagName("apple"));
+
+        // Q. 用JS證明ID不可重複
+        // A. 
+        //     <h4 id="apple">apple</h4>
+        //     <h4 id="apple">AAA</h4>
+        //     document.write(document.getElementsByTagName("apple"));
+
+        
+    </script>
+
+</body>
+
+</html>

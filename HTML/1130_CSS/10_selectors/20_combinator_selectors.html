@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Combinators</title>
+
+    <style>
+        /* 10. child selector (>) */
+        div > p {background-color: red;}
+        /* 20. descendant selector (space)*/
+        div p {background-color: yellow;}
+        /* 30. adjacent sibling selector (+) 後面*/
+        div+p {background-color: blue;}
+        /* 40. general sibling selector (~) 後面的所有*/
+        div~p {background-color: chocolate;} 
+        
+    </style>
+    
+</head>
+
+<body>
+    
+    <h4>CSS Combinators</h4>
+    <p><a href='https://www.w3schools.com/css/css_combinators.asp'>https://www.w3schools.com/css/css_combinators.asp</a></p>
+    <hr>
+    
+    <p>Apple</p>
+    <div>
+        <p>Bee</p>
+        <section>
+            <p>Cat</p>
+        </section>
+    </div>
+    <p>Dog-1</p>
+    <p>Dog-2</p>
+    
+</body>
+
+</html>
