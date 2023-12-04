@@ -9,15 +9,14 @@
 
 </head>
 <body>
+    <header>
+        <nav class="navbar">
+            <a href="" class="item">目前登入人員:</a>
+            <a class="item" asp-area="" asp-controller="LogIn" asp-action="Index">登出</a>
+        </nav>  
+    </header>
     <div class="container-fluid" >
-        <div class="row1" id="Naverbar">
-            <div class="col-md-12">
-                <nav class="navbar">
-                    <a href="" class="item">目前登入人員:</a>
-                    <a class="item" asp-area="" asp-controller="LogIn" asp-action="Index">登出</a>
-                </nav>
-            </div>
-        </div>
+        
         @RenderBody()
     </div>
     

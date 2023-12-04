@@ -20,14 +20,20 @@
                     </button>
                 </form>
             </div>
-            <div>
-                <nav aria-label="breadcrumb" id="breadcrumb-style">
+
+            <div class="breadcrumb-style">
+                <nav aria-label="breadcrumb" class="custom-breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        <li class="breadcrumb-item">
+                            <a asp-area="" asp-controller="System" asp-action="Index">首頁</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a asp-area="" asp-controller="Authority" asp-action="Index">權限管理</a>
+                        </li>
                     </ol>
                 </nav>
             </div>
+
         </nav>
         
 

@@ -1,22 +1,16 @@
-﻿@{
+﻿﻿@{
     ViewData["Title"] = "SalesSystem";
     Layout = "./_SystemLayout";
 }
 
 
 <div class="flexrow">
-    
+
     <div class="flexcard">
         <!--修改成Navbar放進Layout-->
         <div class="left">
             <div class="side-menu">
-                <ul class="list-group">
-                    <li class="list-group-item" style="cursor:pointer;">權限管理</li>
-                    <li class="list-group-item" style="cursor:pointer;">訂單查詢</li>
-                    <li class="list-group-item" style="cursor:pointer;">設備管理</li>
-                    <li class="list-group-item" style="cursor:pointer;">AI製餅</li>
-                    <li class="list-group-item" style="cursor:pointer;">戰情室</li>
-                </ul>
+                @Html.Partial("_LeftSideMenu.cshtml")
             </div>
         </div>
 
@@ -29,7 +23,7 @@
                     <div class="search-group">
                         <div class="search-item">
                             <h4>依日期搜尋</h4>
-                            <input type="date" id="search-date" class="search-date"/>
+                            <input type="date" id="search-date" class="search-date" />
                             <button type="submit"><i class="fa fa-search"></i></button>
                         </div>
                         <div class="search-item">
@@ -42,8 +36,8 @@
                             <input type="text" id="search-level" class="search-level" />
                             <button type="submit"><i class="fa fa-search"></i></button>
                         </div>
-                        
-                       
+
+
                     </div>
                     <div class="head">
                         <div class="head-left">
@@ -75,12 +69,9 @@
                     </table>
                 </div>
             </div>
-            
+
         </div>
     </div>
-    
-    
+
+
 </div>
-
-
-

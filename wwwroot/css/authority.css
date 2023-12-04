@@ -10,6 +10,10 @@ body{
     padding:0;
 }
 
+a{
+    color:#fff;
+    text-decoration:none;
+}
 
 label {
     color: #fff !important;
@@ -20,6 +24,20 @@ input {
 }
 
 #navbar-style{
-    color:#fff;
     font-size: 1.5rem;
+    color: #fff;
 }
+
+.custom-breadcrumb .breadcrumb-item {
+    font-size: 18px;
+    color: white;
+}
+
+   
+.custom-breadcrumb .breadcrumb-item a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+
+

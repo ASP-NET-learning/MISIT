@@ -28,3 +28,4 @@ C:\Users\klas9\source\repos\CookiesSalesSystem\obj\Debug\net8.0\refint\CookiesSa
 C:\Users\klas9\source\repos\CookiesSalesSystem\obj\Debug\net8.0\CookiesSalesSystem.pdb
 C:\Users\klas9\source\repos\CookiesSalesSystem\obj\Debug\net8.0\CookiesSalesSystem.genruntimeconfig.cache
 C:\Users\klas9\source\repos\CookiesSalesSystem\obj\Debug\net8.0\ref\CookiesSalesSystem.dll
+C:\Users\klas9\source\repos\CookiesSalesSystem\obj\Debug\net8.0\CookiesSalesSystem.sourcelink.json
