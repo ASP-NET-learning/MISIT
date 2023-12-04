@@ -1,0 +1,25 @@
+﻿* {
+    margin: 0;
+    font-family: "Noto Sans TC", sans-serif;
+    box-sizing: border-box;
+    background-color: #81A3A7;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+
+label {
+    color: #fff !important;
+}
+
+input {
+    border: 1.5px solid #fff;
+}
+
+#navbar-style{
+    color:#fff;
+    font-size: 1.5rem;
+}

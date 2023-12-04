@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.header {
+    position: absolute;
+    margin: 0px 10px 0 -15px;
+    z-index: 10;
+    background-image: linear-gradient(90deg, rgba(51, 51, 51, 0.5), rgba(85, 85, 85, 0.5));
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* 添加內邊距以避免邊界太靠近屏幕邊緣 */
+}
+
+.logo {
+    width: 30px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+}
+
+.item {
+    flex-grow: 1;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 5px solid transparent;
+    transition: 0.3s;
+    &:hover {
+        color: #ffd600;
+        border-bottom: 5px solid #26ff93;
+    }
+    a:hover {
+        color: #ffd600;
+        text-shadow: 1px 1px 2px #000;
+    }
+}
+
+#carousel slide {
+    position: relative;
+}
+
+.wrap {
+    width: 100%;
+    /* max-width: 1200px; 設定最大寬度，避免在大型螢幕上過寬 */
+    margin: 50px auto;
+    padding: 0 20px; /* 添加內邊距 */
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap; /* 在小螢幕上自動換行 */
+    justify-content: center;
+}
+
+.card {
+    margin: 0 10px 20px; /* 調整卡片之間的間距 */
+    background-color: #fff;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    flex: 1 0 calc(48% - 20px); /* 調整卡片寬度，考慮間距 */
+}
+
+.card img {
+    border-radius: 50%;
+    width: 50%;
+    vertical-align: middle;
+    border: 3px solid gold;
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.card img:hover {
+    transform: scale(1.2);
+}
+
+.btn-radius {
+    margin: 0 10px; /* 調整按鈕之間的間距 */
+    width: 100%;
+    max-width: 300px; /* 設定最大寬度，避免在大型螢幕上過寬 */
+    color: #fff;
+    background-color: #ffd600;
+    border: 1px solid yellow;
+    height: 50px;
+    border-radius: 24px;
+    transition: all 0.3s;
+}
+
+.btn-radius:hover {
+    background-image: linear-gradient(90deg, #FA748B 0%, #f5a623 100%);
+    color: #fff;
+    box-shadow: 0px 10px 5px -2px rgba(0, 0, 0, 0.3);
+    transform: scale(1.5);
+}
+
+.banner{
+    position: relative;
+}
+
+.banner-img{
+    width: 100%;
+    height: auto;
+}
+
+.banner-button {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    flex: 1 0 75%;
+}
+
+.div-case {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap; /* 在小螢幕上自動換行 */
+    justify-content: space-around; /* 讓案例卡片在小螢幕上有更好的排列 */
+}
+
+.div-case-item {
+    border: 3px solid #e8e8e8;
+    border-radius: 7px;
+    display: inline-block;
+    padding: 24px;
+    margin: 0 10px 20px;
+    text-align: center;
+    width: calc(20% - 20px); /* 調整案例卡片寬度，考慮間距 */    
+    height: auto;
+    transition: margin-top 0.5s linear;
+    position: relative;
+    box-shadow: 5px 10px #e8e8e8;
+    &:hover {
+        margin-top: -30px;
+        transition: margin-top 0.3s linear;
+    }
+}
+
+.name {
+    color: #565656;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: -5px;
+}
+
+.price {
+    margin-top: 7px;
+    font-weight: bold;
+    &::after {
+        content: "";
+        font-weight: normal;
+    }
+}
+
+.trial {
+    position: absolute;
+    z-index: 2;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 2px 21px 2px 21px;
+    color: #33c4b6;
+    border: 1px solid #e4e4e4;
+    display: inline-block;
+    border-radius: 15px;
+    background-color: white;
+    position: relative;
+    bottom: -30px;
+}
+
+hr {
+    background-color: #333;
+    border: none;
+    height: 3px;
+    position: relative;
+    z-index: 1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 29px;
+}
+
+li {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: #565656;
+    margin-right: 3px;
+}
+
+.card-top {
+    background-color: #eee;
+    margin-top: 5%;
+    padding: 2% 10%;
+    text-align: center;
+    color: #565656;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.mail {
+    border-radius: 10px;
+    height: auto;
+}
+
+.btn-mail {
+    border-radius: 10px;
+    width: 80px;
+    height: auto;
+    background-color: #ffd600;
+    color: #000;
+}
+
+.btn-mail:hover {
+    background-color: yellow;
+}
+
+.footer-block {
+    background-color: #f5a623;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .container {
+        padding: 0 10px 0;
+    }
+
+    .wrap {
+        margin: 20px auto;
+    }
+
+    .card {
+        flex: 1 0 100%;
+    }
+
+    .div-case-item {
+        width: calc(50% - 20px);
+    }
+
+    .btn-radius{
+        width: 100px;
+        height: auto;
+        font-size: small;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .wrap {
+        max-width: 960px;
+    }
+
+    .card {
+        flex: 1 0 48%;
+    }
+
+    .div-case-item {
+        width: calc(33.333% - 20px);
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .wrap {
+        max-width: 1140px;
+    }
+
+    .card {
+        flex: 1 0 48%;
+    }
+
+    .div-case-item {
+        width: calc(25% - 20px);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .wrap {
+        max-width: 1200px;
+    }
+
+    .card {
+        flex: 1 0 48%;
+    }
+
+    .div-case-item {
+        width: calc(20% - 20px);
+    }
+
+    .card img {
+        width: 150px;
+        height: auto;
+    }
+}

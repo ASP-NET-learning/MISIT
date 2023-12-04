@@ -1,0 +1,161 @@
+﻿* {
+    margin: 0;
+    font-family: "Noto Sans TC", sans-serif;
+    box-sizing: border-box;
+    background-color: #81A3A7;
+}
+
+body {
+    margin: 0;
+}
+
+.item {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.flexrow {
+    display: flex;
+}
+
+.flexcard {
+    width: 100%;
+    height: auto;
+    display: flex;
+    font-size: 30px;
+}
+
+.left {
+    flex: 2;
+}
+
+.right {
+    flex: 8;
+}
+
+
+.side-menu {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+    .side-menu li:hover {
+        background-color: blue;
+        color: #fff;
+        
+    }
+
+
+.welcome {
+    color: #fff;
+    text-align: center;
+}
+
+.bulletin-board {
+    width: 90%;
+    max-height: 650px;
+    margin-left:20px;
+    overflow: auto; 
+}
+
+h2 {
+    text-align: left;
+    margin-top: 20px;
+}
+
+table {
+    font-size: 1.3rem;
+}
+
+.search-group {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.search-item {
+    margin: 10px;
+    flex: 1; 
+    padding: 15px; 
+    font-size: 1rem;
+    text-align: left;
+    background-color: #fff;
+    color: black;
+}
+
+h4 {
+    background-color: #fff;
+}
+
+input,
+button,
+.fa {
+    background-color: #fff;
+}
+
+button {
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+    button:hover {
+        margin-left: 5px; 
+    }
+
+.head {
+    display: flex;
+}
+
+.head-left,
+.head-right {
+    margin-top: 2%;
+    flex: 1;
+    text-align: center; 
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .flexcard {
+        font-size: 20px; 
+    }
+
+    .side-menu {
+        width: 100%; 
+    }
+
+    .head-left,
+    .head-right {
+        flex: 1;
+    }
+
+    .search-group {
+        flex-direction: column; 
+    }
+
+    .search-item {
+        flex: 1; 
+        width: 75%;
+        margin: 10px 0; 
+    }
+
+    .bulletin-board {
+        height: auto; 
+    }
+
+    table table-striped{
+        width:75%;
+    }
+}
+
+
