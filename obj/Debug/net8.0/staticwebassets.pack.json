@@ -73,6 +73,10 @@
       "PackagePath": "staticwebassets\\image\\肉桂天堂.jpg"
     },
     {
+      "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\js\\authority.js",
+      "PackagePath": "staticwebassets\\js\\authority.js"
+    },
+    {
       "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\js\\index.js",
       "PackagePath": "staticwebassets\\js\\index.js"
     },

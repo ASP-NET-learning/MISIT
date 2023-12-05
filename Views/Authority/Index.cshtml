@@ -6,19 +6,32 @@
 <div class="query-header">
     <form class="query-authiorty">
         <div class="mb-3">
-            <label for="" class="">工號</label>
-            <input type="" class="" id="">
+            <label for="employeeId" class="" id="EmployeeID">工號:</label>
+            <input type="text" class="" value="" id="employeeId">
             
         </div>
         <div class="mb-3">
-            <label for="" class="">姓名</label>
-            <input type="" class="" id="">
+            <label for="employeeName" class="">姓名:</label>
+            <input type="text" class="" value="" id="employeeName">
         </div>
-        
-        <button type="submit" class="btn btn-primary">查詢權限</button>
+        <button type="submit" class="btn btn-primary" id="Search" onclick="search()">查詢權限</button>
     </form>
+    <table>
+        <tr>
+            <td>
+                <p id="result"></p>
+            </td>
+            <td>
+                <p id="resultemployeeId"></p>
+            </td>
+            <td>
+                <p id="resultemployeeName"></p>
+            </td>
+        </tr>
+    </table>
 
 </div>
+
 
 <div class="query-body">
     <form class="query-authiorty">
@@ -27,40 +40,55 @@
                 <td>
                     <label class="container">
                         權限管理
-                        <input type="checkbox" checked="checked">
+                        <input type="checkbox" >
                         <span class="checkmark"></span>
                     </label>
                 </td>
                 <td>
                     <label class="container">
                         查詢訂單
-                        <input type="checkbox" checked="checked">
+                        <input type="checkbox" >
                         <span class="checkmark"></span>
                     </label>
                 </td>
                 <td>
                     <label class="container">
                         設備管理
-                        <input type="checkbox" checked="checked">
+                        <input type="checkbox" >
                         <span class="checkmark"></span>
                     </label>
                 </td>
                 <td>
                     <label class="container">
                         AI專區
-                        <input type="checkbox" checked="checked">
+                        <input type="checkbox" >
                         <span class="checkmark"></span>
                     </label>
                 </td>
                 <td>
                     <label class="container">
                         戰情室
-                        <input type="checkbox" checked="checked">
+                        <input type="checkbox" >
                         <span class="checkmark"></span>
                     </label>
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <button type="submit" class="btn btn-primary" id="Add" onclick="add()" disabled>新增</button>
+                </td>
+                <td>
+                    <button type="submit" class="btn btn-info" id="Save" onclick="save()" disabled>存檔</button>
+                </td>
+                <td>
+                    <button type="submit" class="btn btn-danger" id="Delect" onclick="delect()" disabled>刪除</button>
+                </td>
+                <td>
+                    <button type="submit" class="btn btn-warning" id="Edit" onclick="edit()" disabled>編輯</button>
+                </td>
+                
+            </tr>
         </table>
-      
     </form>
+    <p id="displayArea"></p>
 </div>

@@ -17,10 +17,20 @@ a{
 
 label {
     color: #fff !important;
+    font-size: 1.2rem;
 }
 
 input {
     border: 1.5px solid #fff;
+    font-size: 1.2rem;
+}
+
+input[type=text]:enabled {
+  background: #fff;
+}
+
+input[type=text]:disabled {
+  background: #ff0000;
 }
 
 #navbar-style{
@@ -40,4 +50,9 @@ input {
 }
 
 
+.query-body{
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
 
+}
