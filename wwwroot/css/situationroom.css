@@ -1,0 +1,28 @@
+﻿* {
+    margin: 0;
+    font-family: "Noto Sans TC", sans-serif;
+    box-sizing: border-box;
+    background-color: #81A3A7;
+}
+body {
+    margin: 0;
+    padding:0;
+}
+
+a{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.left-side-menu {
+   height:530px;
+}
+
+.mid-top{
+    height:256px;
+}
+
+.mid-bottom {
+    height: 256px;
+}
+

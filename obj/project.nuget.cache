@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "PQvWhz/TuRTWdqy8MFzQqXPLQkUhIQTu10cqSTmeudNwAnWEfpMfVbpl6Duze/vQ9Rc6dq0FqvjbLWq2CYg+3g==",
+  "dgSpecHash": "JQqhDy47lEWH6Ij+Hicpsf3lEDzJqa7mXwU7GEFvFIIsGeE0l8xaW/dBSjdNU1bNLVoZq0dkOinWaADFe3w/tg==",
   "success": true,
   "projectFilePath": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\CookiesSalesSystem.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\klas9\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\klas9\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

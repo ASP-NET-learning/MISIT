@@ -1,0 +1,70 @@
+﻿@{
+    Layout = "_SituationRoomLayout.cshtml";
+}﻿
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+@using System.Text.Json;
+@model IEnumerable<CookiesSalesSystem.Models.Machine>
+@{
+    ViewBag.Title = "機器溫度";
+    var jsonAiMachineLabel = System.Text.Json.JsonSerializer.Serialize(ViewBag.AiMachineLabel);
+    var jsonMachinesValue = System.Text.Json.JsonSerializer.Serialize(Model);
+}
+<div class="container">
+    <div class="jumbotron">
+        <h2>以Liine Chart則線圖繪製機器溫度</h2>
+    </div>
+    <canvas id="lineChart"></canvas>
+</div>
+
+@section endJS {
+    <script>
+        var jsonMachinesValue = @Html.Raw(jsonMachinesValue);
+        var ctx = document.getElementById("lineChart");
+        var chart = new Chart(ctx, {
+            type: "line",
+            data:
+            {
+                labels: @Html.Raw(jsonAiMachineLabel),
+                datasets:
+                    [
+                        {
+                            label: jsonMachinesValue[0].AiMachine, // 修改这里的'lable'为'label'
+                            data: jsonMachinesValue[0].MachineValue,
+                            fill: false
+                        },
+                        {
+                            label: jsonMachinesValue[1].AiMachine,
+                            data: jsonMachinesValue[1].MachineValue,
+                            fill: false
+                        },
+                        {
+                            label: jsonMachinesValue[2].AiMachine,
+                            data: jsonMachinesValue[2].MachineValue,
+                            fill: false
+                        }
+                    ]
+            },
+            options: {
+                responsive: true,
+                title: {
+                    display: true,
+                    fontSize: 26,
+                    text: '機器溫度'
+                },
+                tooltips: {
+                    mode: 'point',
+                    intersect: true,
+                },
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        fontColor: 'black'
+                    }
+                }
+            }
+        });
+
+    </script>
+}
+

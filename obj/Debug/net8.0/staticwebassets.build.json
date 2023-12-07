@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H4egzq3C7CyOs1A8VyzGmX+MNKt/yvDCzoP/GUJPq+k=",
+  "Hash": "WjfbuDasMdTW82iEhtAnQrw8oFTJ/8E+DmQbsQi/hKY=",
   "Source": "CookiesSalesSystem",
   "BasePath": "_content/CookiesSalesSystem",
   "Mode": "Default",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\situationroom.css",
+      "SourceId": "CookiesSalesSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\",
+      "BasePath": "_content/CookiesSalesSystem",
+      "RelativePath": "css/situationroom.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\situationroom.css"
     },
     {
       "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\system.css",
@@ -433,6 +452,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\js\\situationroom.js",
+      "SourceId": "CookiesSalesSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\",
+      "BasePath": "_content/CookiesSalesSystem",
+      "RelativePath": "js/situationroom.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\situationroom.js"
     },
     {
       "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

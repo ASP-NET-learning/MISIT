@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\situationroom.css",
+      "PackagePath": "staticwebassets\\css\\situationroom.css"
+    },
+    {
       "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\system.css",
       "PackagePath": "staticwebassets\\css\\system.css"
     },
@@ -83,6 +87,10 @@
     {
       "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\js\\situationroom.js",
+      "PackagePath": "staticwebassets\\js\\situationroom.js"
     },
     {
       "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\lib\\bootstrap\\LICENSE",
