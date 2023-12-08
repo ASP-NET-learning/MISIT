@@ -11,10 +11,60 @@
     var jsonMachinesValue = System.Text.Json.JsonSerializer.Serialize(Model);
 }
 <div class="container">
-    <div class="jumbotron">
-        <h2>以Liine Chart則線圖繪製機器溫度</h2>
+    
+    <div class="row" id="btn-group">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="radio" id="temperature" name="temperature" value="1" onclick="selectChart('temperature')">
+                    <label for="css">機器溫度</label><br>
+                </div>
+                <div class="col-md-4">
+                    <input type="radio" id="stop" name="stop-btn" value="2" onclick="selectChart('stop')">
+                    <label for="css">停機統計</label><br>
+                </div>
+                <div class="col-md-4">
+                    <input type="radio" id="production" name="production" value="3" onclick="selectChart('production')">
+                    <label for="css">生產量圓餅圖</label><br>
+                </div>
+            </div>
+        </div>
     </div>
-    <canvas id="lineChart"></canvas>
+
+
+    <div class="col-md-8" id="line">
+        <div class="panel panel-primary">
+            <div class="panel-heading">機器溫度</div>
+            <div class="panel-body">
+                <canvas id="lineChart"></canvas>
+            </div>
+            <div class="panel-footer"></div>
+        </div>
+    </div>
+
+    <div class="col-md-8" id="verticalbar">
+        <div class="panel panel-primary">
+            <div class="panel-heading">停機統計</div>
+            <div class="panel-body">
+                <canvas id="verticalBar"></canvas>
+            </div>
+            <div class="panel-footer"></div>
+        </div>
+    </div>
+
+    <div class="col-md-8" id="pie">
+        <div class="panel panel-primary">
+            <div class="panel-heading">停機統計</div>
+            <div class="panel-body">
+                <canvas id="pieChart"></canvas>
+            </div>
+            <div class="panel-footer"></div>
+        </div>
+    </div>
+    
+    
+
+
 </div>
 
 @section endJS {
@@ -65,6 +115,164 @@
             }
         });
 
+    </script>
+    <script>
+        const barDirection = {
+            vertical: 'bar',
+            horizontal: 'bar'
+        };
+
+        var ctx1 = document.getElementById("verticalBar")
+        BarChart(ctx1, barDirection.vertical);
+
+        var ctx2 = document.getElementById("horizontalBar")
+        BarChart(ctx2, barDirection.horizontal);
+
+
+        function BarChart(context, barChartDirection) {
+            if (!ctx2) {
+                var myChart = new Chart(context, {
+                    type: barChartDirection,
+                    data: {
+                        labels: @Html.Raw(jsonAiMachineLabel),
+                        datasets: [{
+                            label: '停機次數統計',
+                            data: jsonMachinesValue[0].MachineValue
+                                    }]
+                    },
+                    options: {
+
+                        responsive: true,
+                        title: {
+                            display: true,
+                            fontSize: 26,
+                            text: ''
+                        },
+                        tooltips: {
+                            mode: 'point',
+                            intersect: true,
+                        },
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                fontColor: 'black'
+                            }
+                        }
+                    }
+                });
+            }
+            else {
+                var myChart = new Chart(context, {
+                    type: barChartDirection,
+                    data: {
+                        labels: @Html.Raw(jsonAiMachineLabel),
+                        datasets: [{
+                            label: '',
+                            data: jsonMachinesValue[0].MachineValue
+                                    }]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        title: {
+                            display: true,
+                            fontSize: 26,
+                            text: ''
+                        },
+                        tooltips: {
+                            mode: 'point',
+                            intersect: true,
+                        },
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                fontColor: 'black'
+                            }
+                        }
+                    }
+                });
+            }
+
+
+        }
+    </script>
+    <script>
+        var ctxPie = document.getElementById('pieChart');
+        var myChartPie = new Chart(ctxPie, {
+            type: 'pie',
+            data:
+            {
+                labels: @Html.Raw(jsonAiMachineLabel),
+                datasets: [{
+                    data: [20, 6, 9, 11, 5, 13, 7, 4, 9, 1, 7, 8],
+                    
+                }]
+            },
+            options: {
+                responsive: true,
+                title: {
+                    display: true,
+                    fontSize: 26,
+                    text: ''
+                },
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        fontColor: 'black' // 修正這裡，黑色字體的設定要用引號括起來
+                    }
+                }
+            }
+        });
+    </script>
+
+    <script>
+        // Button group
+        var temperature = document.getElementById("temperature");
+        var stop = document.getElementById("stop");
+        var production = document.getElementById("production");
+
+        //Chart group
+        var line = document.getElementById("line");
+        var verticalbar = document.getElementById('verticalbar');
+        var pie = document.getElementById('pie');
+
+        line.style.display = '';
+        verticalbar.style.display = 'none';
+        pie.style.display = 'none';
+
+        function selectChart(selectedChart) {
+            if (selectedChart === 'temperature') {
+                line.style.display = '';
+                verticalbar.style.display = 'none';
+                pie.style.display = 'none';
+
+                temperature.checked = true;
+                stop.checked = false;
+                production.checked = false;
+
+                alert("temperature");
+            } else if (selectedChart === 'stop') {
+                line.style.display = 'none';
+                verticalbar.style.display = '';
+                pie.style.display = 'none';
+
+                temperature.checked = false;
+                stop.checked = true;
+                production.checked = false;
+
+                alert("stop!");
+            } else if (selectedChart === 'production') {
+                line.style.display = 'none';
+                verticalbar.style.display = 'none';
+                pie.style.display = '';
+
+                temperature.checked = false;
+                stop.checked = false;
+                production.checked = true;
+
+                alert("production");
+            }
+        }
     </script>
 }
 

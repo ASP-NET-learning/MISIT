@@ -1,0 +1,29 @@
+﻿<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+@{
+    Layout = "_SituationRoomLayout.cshtml";
+}
+
+
+@using System.Text.Json;
+@model IEnumerable<CookiesSalesSystem.Models.Machine>
+@{
+    var jsonAiMachineLabel = System.Text.Json.JsonSerializer.Serialize<object>(ViewBag.AiMachineLabel);
+    var jsonMachinesValue = System.Text.Json.JsonSerializer.Serialize<object>(Model);
+}
+
+@{
+    ViewBag.Title = "機器統計";
+}
+
+<div class="container">
+    <div class="jumbotron">
+        <h2>以Liine Chart則線圖繪製機器溫度</h2>
+    </div>
+
+    @Html.Partial("LineMachineValueData", Model)
+
+</div>
+
+
+
+@* <button id="Temperature" onclick="temperature()">機器停機統計</button> *@

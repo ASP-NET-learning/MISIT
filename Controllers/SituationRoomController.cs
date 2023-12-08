@@ -25,7 +25,7 @@ namespace CookiesSalesSystem.Controllers
 
 
             string[] AiMachine = { "機器1", "機器2", "3機器", "機器4", "機器5", "機器6",
-                "機器8", "機器9", "機器10", "機器11", "機器12"};
+                "機器7","機器8", "機器9", "機器10", "機器11", "機器12"};
             ViewBag.AiMachineLabel = AiMachine;
 
             Random random = new Random();
