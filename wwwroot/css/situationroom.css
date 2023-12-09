@@ -1,16 +1,129 @@
-﻿
-
-.container {
+﻿.container {
     width: 100% !important;
     height: auto !important;
-    font-family: 'Microsoft JhengHei' !important;
-    text-align:center;
+    font-family: 'Microsoft JhengHei';
+    text-align: center;
 }
 
-.panel-body {
-    width: 100% !important;
-    height: auto !important;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top:5%;
+.machine-group {
+    margin: 30px;
+    display: flex;
+}
+
+.rows {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 1px solid #808080;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    gap: 5px;
+}
+
+.space {
+    display: flex;
+    width: 50px;
+}
+
+.item-end {
+    margin-left: 50px;
+}
+
+.machine-navbar {
+    display: flex;
+    color: #808080;
+    font-size: medium;
+    font-weight: bold;
+    gap: 20px;
+}
+
+    .machine-navbar div {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+        .machine-navbar div:hover {
+            background-color: orange;
+            color: white;
+        }
+
+        .machine-navbar div.active {
+            background-color: orange;
+            color: white;
+        }
+
+.machine-banner {
+    margin: 20px;
+    border: 1.5px solid #808080;
+    border-radius: 20px;
+    text-align: left;
+}
+
+p {
+    margin-left: 20px;
+}
+
+h3 {
+    margin-left: 20px;
+}
+
+
+.machine-table {
+    margin: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+p {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.machine-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.machine-table th, .machine-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.machine-table th {
+    background-color: #f2f2f2;
+}
+
+.machine-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.machine-table tbody tr:hover {
+    background-color: #e6e6e6;
+}
+
+.table-and-chart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.machine-table {
+    flex: 1;
+}
+
+.chart-group {
+    flex: 2;
 }
