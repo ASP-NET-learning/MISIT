@@ -6,6 +6,7 @@
     @RenderSection("topCSS", required: false)
     @RenderSection("topJS", required: false)
     <title>@ViewData["Title"] - SituationRoom</title>
+    <script src="https://kit.fontawesome.com/33d6c0fa08.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="~/css/situationroom.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     @* <link rel="stylesheet" href="~/ChartMvc.styles.css" asp-append-version="true" /> *@
@@ -15,6 +16,7 @@
     <div class="container">
         <div class="jumbotron">
             <h2>目前運作狀態總覽</h2>
+            <p>單位每小時產能</p>
         </div>
         @RenderBody()
     </div>
