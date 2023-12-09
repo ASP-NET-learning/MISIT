@@ -1,28 +1,16 @@
-﻿* {
-    margin: 0;
-    font-family: "Noto Sans TC", sans-serif;
-    box-sizing: border-box;
-    background-color: #81A3A7;
-}
-body {
-    margin: 0;
-    padding:0;
+﻿
+
+.container {
+    width: 100% !important;
+    height: auto !important;
+    font-family: 'Microsoft JhengHei' !important;
+    text-align:center;
 }
 
-a{
-    color: #fff;
-    font-size: 1.2rem;
+.panel-body {
+    width: 100% !important;
+    height: auto !important;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top:5%;
 }
-
-.left-side-menu {
-   height:530px;
-}
-
-.mid-top{
-    height:256px;
-}
-
-.mid-bottom {
-    height: 256px;
-}
-

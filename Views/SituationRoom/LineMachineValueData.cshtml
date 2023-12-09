@@ -10,62 +10,56 @@
     var jsonAiMachineLabel = System.Text.Json.JsonSerializer.Serialize(ViewBag.AiMachineLabel);
     var jsonMachinesValue = System.Text.Json.JsonSerializer.Serialize(Model);
 }
-<div class="container">
-    
-    <div class="row" id="btn-group">
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-4">
-                    <input type="radio" id="temperature" name="temperature" value="1" onclick="selectChart('temperature')">
-                    <label for="css">機器溫度</label><br>
-                </div>
-                <div class="col-md-4">
-                    <input type="radio" id="stop" name="stop-btn" value="2" onclick="selectChart('stop')">
-                    <label for="css">停機統計</label><br>
-                </div>
-                <div class="col-md-4">
-                    <input type="radio" id="production" name="production" value="3" onclick="selectChart('production')">
-                    <label for="css">生產量圓餅圖</label><br>
-                </div>
+<div class="row" id="btn-group">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-4">
+                <input type="radio" id="temperature" name="temperature" value="1" onclick="selectChart('temperature')">
+                <label for="css">機器溫度</label><br>
+            </div>
+            <div class="col-md-4">
+                <input type="radio" id="stop" name="stop-btn" value="2" onclick="selectChart('stop')">
+                <label for="css">停機統計</label><br>
+            </div>
+            <div class="col-md-4">
+                <input type="radio" id="production" name="production" value="3" onclick="selectChart('production')">
+                <label for="css">生產量圓餅圖</label><br>
             </div>
         </div>
     </div>
-
-
-    <div class="col-md-8" id="line">
-        <div class="panel panel-primary">
-            <div class="panel-heading">機器溫度</div>
-            <div class="panel-body">
-                <canvas id="lineChart"></canvas>
-            </div>
-            <div class="panel-footer"></div>
-        </div>
-    </div>
-
-    <div class="col-md-8" id="verticalbar">
-        <div class="panel panel-primary">
-            <div class="panel-heading">停機統計</div>
-            <div class="panel-body">
-                <canvas id="verticalBar"></canvas>
-            </div>
-            <div class="panel-footer"></div>
-        </div>
-    </div>
-
-    <div class="col-md-8" id="pie">
-        <div class="panel panel-primary">
-            <div class="panel-heading">停機統計</div>
-            <div class="panel-body">
-                <canvas id="pieChart"></canvas>
-            </div>
-            <div class="panel-footer"></div>
-        </div>
-    </div>
-    
-    
-
-
 </div>
+
+<div class="col-md-8" id="line">
+    <div class="panel panel-primary">
+        
+        <div class="panel-body">
+            <canvas id="lineChart"></canvas>
+        </div>
+        <div class="panel-footer"></div>
+    </div>
+</div>
+
+<div class="col-md-8" id="verticalbar">
+    <div class="panel panel-primary">
+        
+        <div class="panel-body">
+            <canvas id="verticalBar"></canvas>
+        </div>
+        <div class="panel-footer"></div>
+    </div>
+</div>
+
+<div class="col-md-8" id="pie">
+    <div class="panel panel-primary">
+       
+        <div class="panel-body">
+            <canvas id="pieChart"></canvas>
+        </div>
+        <div class="panel-footer"></div>
+    </div>
+</div>
+
+
 
 @section endJS {
     <script>
