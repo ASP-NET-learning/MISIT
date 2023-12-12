@@ -1,0 +1,37 @@
+﻿container {
+    width: 100% !important;
+    height: auto !important;
+    font-family: 'Microsoft JhengHei';
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #808080;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.machine-navbar {
+    display: flex;
+    gap: 20px;
+}
+
+    .machine-navbar div {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+        .machine-navbar div:hover {
+            background-color: orange;
+        }
+
+        .machine-navbar div a:hover {
+            background-color: orange;
+            color:white!important;
+        }
+
+        .machine-navbar div.active {
+            background-color: orange;
+            color: white !important;
+        }

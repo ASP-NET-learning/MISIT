@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WjfbuDasMdTW82iEhtAnQrw8oFTJ/8E+DmQbsQi/hKY=",
+  "Hash": "MzlSRW6AvZFEG79Zt6f7pA/Z6x+UM4qhoCdwT5hA/Zo=",
   "Source": "CookiesSalesSystem",
   "BasePath": "_content/CookiesSalesSystem",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login.css"
+    },
+    {
+      "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\search.css",
+      "SourceId": "CookiesSalesSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\",
+      "BasePath": "_content/CookiesSalesSystem",
+      "RelativePath": "css/search.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\search.css"
     },
     {
       "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\site.css",
@@ -433,6 +452,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\index.js"
+    },
+    {
+      "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\js\\search.js",
+      "SourceId": "CookiesSalesSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\",
+      "BasePath": "_content/CookiesSalesSystem",
+      "RelativePath": "js/search.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\search.js"
     },
     {
       "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\js\\site.js",

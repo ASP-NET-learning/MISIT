@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CookiesSalesSystem</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/search.css" />
+    <script src="~/js/search.js" asp-append-version="true"></script>
+</head>
+<body>
+    <header>
+        <div class="machine-navbar">
+            <div onclick="changeStyle(0)">
+                <a asp-area="" asp-controller="System" asp-action="Index">首頁</a>
+            </div>
+            <div onclick="changeStyle(1)">
+                <a asp-area="" asp-controller="Search" asp-action="Index">訂單查詢</a>
+            </div>
+            <div onclick="changeStyle(2)">
+                <a asp-area="" asp-controller="Equipment" asp-action="Index">設備管理</a>
+            </div>
+            <div onclick="changeStyle(3)">
+                <a asp-area="" asp-controller="Authority" asp-action="Index">權限管理</a>
+            </div>
+            <div onclick="changeStyle(4)">
+                <a asp-area="" asp-controller="AiCookies" asp-action="Index">AI製餅</a>
+            </div>
+            <div onclick="changeStyle(5)">
+                <a asp-area="" asp-controller="SituationRoom" asp-action="LineMachineValueData">戰情室</a>
+            </div>
+            <div onclick="changeStyle(6)">
+                <a asp-area="" asp-controller="LogIn" asp-action="Index">登出</a>
+            </div>
+        </div>
+
+    </header>
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

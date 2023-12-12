@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
+      "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\search.css",
+      "PackagePath": "staticwebassets\\css\\search.css"
+    },
+    {
       "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -83,6 +87,10 @@
     {
       "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\js\\index.js",
       "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\js\\search.js",
+      "PackagePath": "staticwebassets\\js\\search.js"
     },
     {
       "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\js\\site.js",

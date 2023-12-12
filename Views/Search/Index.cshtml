@@ -1,0 +1,84 @@
+﻿@model X.PagedList.IPagedList<CookiesSalesSystem.Models.Orders>
+@using X.PagedList.Mvc.Core
+@using X.PagedList.Web.Common
+
+@{
+    Layout = "_SearchLayout.cshtml";
+}
+@if (ViewBag.Message != null)
+{
+    <p>@ViewBag.Message</p> //未找到訂單
+}
+else //預設
+{
+    <form asp-controller="Search" asp-action="Index" method="get">
+        <p>
+            <input type="text" name="searchString" autocomplete="off" />
+            <input type="submit" value="Search" />
+        </p>
+    </form>
+    @if (Model != null && Model.Any())
+    {
+        <table class="table" id="query-result">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <td>CustomerID</td>
+                    <td>EmployeeID</td>
+                    <td>OrderDate</td>
+                    <td>RequiredDate</td>
+                    <td>ShippedDate</td>
+                    <td>ShipVia</td>
+                    <td>Freight</td>
+                    <td>ShipName</td>
+                    <td>ShipAddress</td>
+                    <td>ShipCity</td>
+                    <td>ShipRegion</td>
+                    <td>ShipPostalCode</td>
+                    <td>ShipCountry</td>
+                    <!-- 其他訂單相關標題 -->
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in Model)
+                {
+                    <tr>
+                        <td>@order.OrderID</td>
+                        <td>@order.CustomerID</td>
+                        <td>@order.EmployeeID</td>
+                        <td>@order.OrderDate</td>
+                        <td>@order.RequiredDate</td>
+                        <td>@order.ShippedDate</td>
+                        <td>@order.ShipVia</td>
+                        <td>@order.Freight</td>
+                        <td>@order.ShipName</td>
+                        <td>@order.ShipAddress</td>
+                        <td>@order.ShipCity</td>
+                        <td>@order.ShipRegion</td>
+                        <td>@order.ShipPostalCode</td>
+                        <td>@order.ShipCountry</td>
+                        <!-- 其他訂單相關數據 -->
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <div class="pagination justify-content-center">
+            @Html.PagedListPager(Model, page => Url.Action("OrderList", new { page }), new PagedListRenderOptions
+            {
+                LiElementClasses = new string[] { "page-item" },
+                PageClasses = new string[] { "page-link" },
+                ContainerDivClasses = new string[] { "pagination" },
+                UlElementClasses = new string[] { "pagination" }
+            })
+        </div>
+
+
+    }
+    else
+    {
+        <p>未找到符合條件的訂單。</p>
+    }
+}
+
+
+
