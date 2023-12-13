@@ -35,3 +35,8 @@ a {
             background-color: orange;
             color: white !important;
         }
+
+.query-input{
+    display:flex;
+}
+

@@ -1,22 +1,35 @@
-﻿@model X.PagedList.IPagedList<CookiesSalesSystem.Models.Orders>
+﻿@model IEnumerable<CookiesSalesSystem.Models.Orders>
 @using X.PagedList.Mvc.Core
 @using X.PagedList.Web.Common
 
 @{
     Layout = "_SearchLayout.cshtml";
 }
+
 @if (ViewBag.Message != null)
 {
-    <p>@ViewBag.Message</p> //未找到訂單
+    <p>@ViewBag.Message</p>
+//未找到訂單
 }
-else //預設
+else
 {
     <form asp-controller="Search" asp-action="Index" method="get">
         <p>
-            <input type="text" name="searchString" autocomplete="off" />
+            <label for="qOrderID">Order ID:</label>
+            <input type="text" name="qOrderID" autocomplete="off" />
+
+            <label for="qEmployeeID">Employee ID:</label>
+            <input type="text" name="qEmployeeID" autocomplete="off" />
+
             <input type="submit" value="Search" />
         </p>
+
     </form>
+
+    <h2>Search Results</h2>
+
+    <!--顯示表格-->
+    <!--在你的View中的Search Results下方加入以下代碼-->
     @if (Model != null && Model.Any())
     {
         <table class="table" id="query-result">
@@ -63,13 +76,7 @@ else //預設
             </tbody>
         </table>
         <div class="pagination justify-content-center">
-            @Html.PagedListPager(Model, page => Url.Action("OrderList", new { page }), new PagedListRenderOptions
-            {
-                LiElementClasses = new string[] { "page-item" },
-                PageClasses = new string[] { "page-link" },
-                ContainerDivClasses = new string[] { "pagination" },
-                UlElementClasses = new string[] { "pagination" }
-            })
+            
         </div>
 
 
@@ -78,7 +85,6 @@ else //預設
     {
         <p>未找到符合條件的訂單。</p>
     }
+
 }
-
-
 

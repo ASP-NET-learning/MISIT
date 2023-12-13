@@ -1,5 +1,6 @@
 ﻿using CookiesSalesSystem.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using X.PagedList;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
@@ -18,19 +19,33 @@ namespace CookiesSalesSystem.Controllers
 
         [HttpGet]
         [Route("Search/OrderList")]
-        public IActionResult Index(int? page, string searchString)
+        public IActionResult Index(int? page, string qOrderID, string qEmployeeID)
         {
             int pageSize = 5;
 
             var orders = from o in _context.Orders
                          select o;
 
-            if (!string.IsNullOrEmpty(searchString))
+
+
+            if (!string.IsNullOrEmpty(qOrderID) && !string.IsNullOrEmpty(qEmployeeID))
             {
-                orders = orders.Where(o => o.OrderID.ToString().Contains(searchString));
+                orders = orders.Where(o => o.OrderID == int.Parse(qOrderID)
+                                    || o.EmployeeID == int.Parse(qEmployeeID));
             }
+            else if (!string.IsNullOrEmpty(qOrderID))
+            {
+                orders = orders.Where(o => o.OrderID == int.Parse(qOrderID));
+            }
+            else  if (!string.IsNullOrEmpty(qEmployeeID))
+            {
+                orders = orders.Where(o => o.EmployeeID == int.Parse(qEmployeeID));
+            }
+            else
+            { }
 
             var orderList = orders.ToPagedList(page ?? 1, pageSize);
+
 
             if (orderList.Count == 0)
             {
