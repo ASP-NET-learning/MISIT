@@ -1,0 +1,33 @@
+﻿﻿@{
+    Layout = null;
+}
+<h1>Ai 設定</h1>
+
+<form action="~/Equipment" method="post" target="_parent" onsubmit="submitForm(event)">
+    <!-- 網路設定項目 -->
+    <label for="Algorithm">選擇演算法：</label>
+    <select class="form-select" aria-label="Default select example" id="AlgorithmID" name="AlgorithmName">
+        <option selected></option>
+        <option value="CNN">CNN</option>
+        <option value="GAN">GAN</option>
+        <option value="XGBOOST">XGBOOST</option>
+    </select>
+    <br>
+
+    <label for="Hyperparameter">設定超參數：</label>
+    <input type="text" id="HyperparameterID" name="HyperparameterName" required autocomplete="off">
+
+    <label for="Parameter">參數1：</label>
+    <input type="text" id="ParameterID" name="ParameterName" required autocomplete="off">
+
+
+    <!-- 提交按鈕 -->
+    <input type="submit" class="btn-info" value="提交">
+    <input type="submit" class="btn-warning" value="檢查">
+</form>
+
+<script>
+    function submitForm(event) {
+
+    }
+</script>

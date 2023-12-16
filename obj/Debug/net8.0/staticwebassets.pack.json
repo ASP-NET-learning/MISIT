@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\authority.css"
     },
     {
+      "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\equipment.css",
+      "PackagePath": "staticwebassets\\css\\equipment.css"
+    },
+    {
       "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\index.css",
       "PackagePath": "staticwebassets\\css\\index.css"
     },

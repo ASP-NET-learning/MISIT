@@ -1,0 +1,186 @@
+﻿@{
+    Layout = "_EquipmentLayout.cshtml";
+}
+
+<div class="setting-group">
+    <form>
+        <fieldset>
+            <legend>名稱設定詳細資料</legend>
+            <div>
+                <label for="machineType">機器種類</label>
+                <select class="form-select" aria-label="Default select example" id="MachineClass" name="MachineClass">
+                    <option selected></option>
+                    <option value="包裝機">包裝機</option>
+                    <option value="殺菌機">殺菌機</option>
+                    <option value="烘烤機">烘烤機</option>
+                </select>
+
+            </div>
+            <div>
+                <label for="machineType">機器名稱</label>
+                <input type="text" id="machineType" name="MachineName" required autocomplete="off" />
+            </div>
+            <div>
+                <label for="supervisorID">掌管人員工號</label>
+                <input type="text" id="supervisorID" name="supervisorID" required autocomplete="off" />
+            </div>
+            <div>
+                <label for="newEmployeeID">新增人員工號</label>
+                <input type="text" id="newEmployeeID" name="EmployeeName" required autocomplete="off" />
+            </div>
+            <div>
+                <label for="department">負責部門</label>
+                <input type="text" id="department" name="DepartmentName" required autocomplete="off" />
+            </div>
+            <div>
+                <label for="currentTime">新增時間</label>
+                <input type="datetime-local" id="currentTime" name="addTime">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>網路設定詳細資料</legend>
+            <div>
+                <label for="wifiAccount">WIFI帳號</label>
+                <input type="text" id="wifiAccount" name="wifiSSID" required autocomplete="off" />
+            </div>
+            <div>
+                <label for="">WIFI密碼</label>
+                <input type="text" id="wifiPasswordID" name="wifiPassword" required autocomplete="off" />
+            </div>
+            <div>
+                <label for="ip">IP</label>
+                <input type="text" id="ip" name="ipAddress" required autocomplete="off" />
+            </div>
+            <div>
+                <label for="mask">遮罩</label>
+                <input type="text" id="mask" name="subnetMask" required autocomplete="off" />
+            </div>
+            <div>
+                <label for="ramp">匝道</label>
+                <input type="text" id="ramp" name="gateway" required autocomplete="off" />
+            </div>
+            <div>
+                <label for="dns">DNS</label>
+                <input type="text" id="dns" name="dns" required autocomplete="off" />
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>操作設定詳細資料</legend>
+            <div>
+                <label for="switch">開關</label>
+                <select class="form-select" aria-label="Default select example" id="" name="Open">
+                    <option selected></option>
+                    <option value="啟動">啟動</option>
+                    <option value="關閉">關閉</option>
+                    <option value="待命">待命</option>
+                </select>
+            </div>
+           
+            <div>
+                <label for="speed">速度</label>
+                <select class="form-select" aria-label="Default select example" id="" name="Speed">
+                    <option selected></option>
+                    <option value="快">快</option>
+                    <option value="中">中</option>
+                    <option value="慢">慢</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="optimization">優化設定</label>
+                <select class="form-select" aria-label="Default select example" id="" name="Optimization">
+                    <option selected></option>
+                    <option value="最佳效能(建議)">最佳效能</option>
+                    <option value="節能模式">節能模式</option>
+                    <option value="正常">正常</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ai</legend>
+            <div>
+                <label for="Algorithm">選擇演算法：</label>
+                <select class="form-select" aria-label="Default select example" id="AlgorithmID" name="AlgorithmName">
+                    <option selected></option>
+                    <option value="CNN">CNN</option>
+                    <option value="GAN">GAN</option>
+                    <option value="XGBOOST">XGBOOST</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="hyperparameter">超參數</label>
+                <input type="text" id="HyperparameterNameID" name="HyperparameterName" required autocomplete="off"/>
+            </div>
+
+            <div>
+                <label for="Cross">交叉測試設定</label>
+                <select class="form-select" aria-label="Default select example" id="CrossID" name="CrossName">
+                    <option selected></option>
+                    <option value="Y">Y</option>
+                    <option value="N">N</option>
+                </select>
+            </div>
+        </fieldset>
+        <div class="action">
+            <input type="submit" class="btn btn-success" value="新增機器" />
+            <input type="submit" class="btn btn-warning" value="編輯機器" />
+            <input type="submit" class="btn btn-info" value="查詢機器" />
+        </div>
+    </form>
+</div>
+
+<div class="name-value">
+    <table>
+        <tr>
+            <th>名稱設定詳細資料</th>
+            <th>網路設定詳細資料</th>
+        </tr>
+        <tr>
+            <td><p>機器種類：@ViewBag.MachineClass</p></td>
+            <td><p>WIFI帳號：@ViewBag.wifiSSID</p></td>
+        </tr>
+        <tr>
+            <td><p>機器名稱：@ViewBag.MachineName</p></td>
+            <td><p>WIFI密碼：@ViewBag.wifiPassword</p></td>
+        </tr>
+        <tr>
+            <td><p>掌管人員工號：@ViewBag.supervisorID</p></td>
+            <td><p>IP：@ViewBag.ipAddress</p></td>
+        </tr>
+        <tr>
+            <td><p>新增人員工號：@ViewBag.EmployeeName</p></td>
+            <td> <p>遮罩：@ViewBag.subnetMask</p></td>
+        </tr>
+        <tr>
+            <td><p>負責部門：@ViewBag.DepartmentName</p></td>
+            <td><p>匝道：@ViewBag.gateway</p></td>
+        </tr>
+        <tr>
+            <td><p>新增時間：@ViewBag.AddTime.ToString()</p> @* 待修理 *@</td>
+            <td><p>DNS：@ViewBag.dns</p></td>
+        </tr>
+        <tr>
+            <th>操作設定詳細資料</th>
+            <th>AI設定</th>
+        </tr>
+        <tr>
+            <td><p>開關：@ViewBag.Open</p></td>
+            <td> <p>演算法：@ViewBag.AlgorithmName</</td>
+        </tr>
+        <tr>
+            <td><p>速度：@ViewBag.Speed</p></td>
+            <td><p>超參數：@ViewBag.HyperparameterName</p></td>
+        </tr>
+        <tr>
+            <td>
+                <p>優化設定：@ViewBag.Optimization</p>
+            </td>
+            <td><p>交叉測試否：@ViewBag.CrossName</p></td>
+        </tr>
+    </table>
+</div>
+
