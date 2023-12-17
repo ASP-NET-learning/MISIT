@@ -11,6 +11,10 @@ public partial class masterContext : DbContext
     {
     }
 
+    public virtual DbSet<Ai> Ai { get; set; }
+
+    public virtual DbSet<AiBom> AiBom { get; set; }
+
     public virtual DbSet<Alphabetical_list_of_products> Alphabetical_list_of_products { get; set; }
 
     public virtual DbSet<Categories> Categories { get; set; }
@@ -36,6 +40,12 @@ public partial class masterContext : DbContext
     public virtual DbSet<Employees> Employees { get; set; }
 
     public virtual DbSet<Invoices> Invoices { get; set; }
+
+    public virtual DbSet<Machines> Machines { get; set; }
+
+    public virtual DbSet<NetWork> NetWork { get; set; }
+
+    public virtual DbSet<Operations> Operations { get; set; }
 
     public virtual DbSet<Order_Details> Order_Details { get; set; }
 
@@ -79,6 +89,106 @@ public partial class masterContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.Entity<Ai>(entity =>
+        {
+            entity.HasKey(e => e.ID).HasName("PK__Ai__3214EC27EB8133AE");
+
+            entity.Property(e => e.AlgorithmName)
+                .HasMaxLength(20)
+                .IsUnicode(false);
+            entity.Property(e => e.CreateID)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+            entity.Property(e => e.CrossName)
+                .HasMaxLength(1)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.HyperparameterName)
+                .HasMaxLength(5)
+                .IsUnicode(false);
+            entity.Property(e => e.MachineID)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.ModifyEmployeeID)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<AiBom>(entity =>
+        {
+            entity.HasKey(e => e.ID).HasName("PK__AiBom__3214EC278E4F6FA9");
+
+            entity.Property(e => e.AlgorithmName)
+                .HasMaxLength(20)
+                .IsUnicode(false);
+            entity.Property(e => e.CreateID)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+            entity.Property(e => e.CrossName)
+                .HasMaxLength(1)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.DepartmentName)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.Dns)
+                .HasMaxLength(15)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.EmployeeName)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.Gateway)
+                .HasMaxLength(15)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.HyperparameterName)
+                .HasMaxLength(5)
+                .IsUnicode(false);
+            entity.Property(e => e.IpAddress)
+                .HasMaxLength(15)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.MachineClass)
+                .HasMaxLength(10)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.MachineID)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.MachineName)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+            entity.Property(e => e.ModifyEmployeeID)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.Open_)
+                .HasMaxLength(2)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.Optimization)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.Speed)
+                .HasMaxLength(5)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.SubnetMask)
+                .HasMaxLength(15)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.SupervisorID)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.WifiPassword)
+                .HasMaxLength(20)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.WifiSSID)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+        });
+
         modelBuilder.Entity<Alphabetical_list_of_products>(entity =>
         {
             entity
@@ -341,6 +451,95 @@ public partial class masterContext : DbContext
             entity.Property(e => e.ShippedDate).HasColumnType("datetime");
             entity.Property(e => e.ShipperName).HasMaxLength(40);
             entity.Property(e => e.UnitPrice).HasColumnType("money");
+        });
+
+        modelBuilder.Entity<Machines>(entity =>
+        {
+            entity.HasKey(e => e.ID).HasName("PK__Machine__3214EC27F7085DA3");
+
+            entity.Property(e => e.CreateID)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+            entity.Property(e => e.DepartmentName)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.EmployeeName)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.MachineClass)
+                .HasMaxLength(10)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.MachineID)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.MachineName)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+            entity.Property(e => e.ModifyEmployeeID)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.SupervisorID)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<NetWork>(entity =>
+        {
+            entity.HasKey(e => e.ID).HasName("PK__NetWork__3214EC27F83D28D5");
+
+            entity.Property(e => e.CreateID)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+            entity.Property(e => e.Dns)
+                .HasMaxLength(15)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.Gateway)
+                .HasMaxLength(15)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.IpAddress)
+                .HasMaxLength(15)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.ModifyEmployeeID)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.SubnetMask)
+                .HasMaxLength(15)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.WifiPassword)
+                .HasMaxLength(20)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.WifiSSID)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+        });
+
+        modelBuilder.Entity<Operations>(entity =>
+        {
+            entity.HasKey(e => e.ID).HasName("PK__Operatio__3214EC279A0232A2");
+
+            entity.Property(e => e.CreateID)
+                .HasMaxLength(255)
+                .IsUnicode(false);
+            entity.Property(e => e.ModifyEmployeeID)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.Open_)
+                .HasMaxLength(2)
+                .IsUnicode(false)
+                .IsFixedLength();
+            entity.Property(e => e.Optimization)
+                .HasMaxLength(10)
+                .IsUnicode(false);
+            entity.Property(e => e.Speed)
+                .HasMaxLength(5)
+                .IsUnicode(false)
+                .IsFixedLength();
         });
 
         modelBuilder.Entity<Order_Details>(entity =>
