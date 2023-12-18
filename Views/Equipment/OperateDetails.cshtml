@@ -1,0 +1,43 @@
+﻿@model CookiesSalesSystem.Models.AiBom
+
+@{
+    ViewBag.Title = "Operate Details";
+    Layout = "_EquipmentLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BOM</h4>
+    <hr />
+    <table class="table-bordered">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.MachineID)</th>
+                <th>@Html.DisplayNameFor(model => model.Open_)</th>
+                <th>@Html.DisplayNameFor(model => model.Speed)</th>
+                <th>@Html.DisplayNameFor(model => model.Optimization)</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Html.DisplayFor(model => model.MachineID)</td>
+                <td>@Html.DisplayFor(model => model.Open_)</td>
+                <td>@Html.DisplayFor(model => model.Speed)</td>
+                <td>@Html.DisplayFor(model => model.Optimization)</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+@* CreateID, CreatDate, ModifyDate, ModifyEmployeeID,
+ MachineID, MachineClass, MachineName, SupervisorID, EmployeeName, DepartmentName, AddTime,
+WifiSSID, WifiPassword, IpAddress, SubnetMask, Gateway, Dns,
+Open_, Speed, Optimization,
+AlgorithmName, HyperparameterName, CrossName *@

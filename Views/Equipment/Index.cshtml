@@ -2,8 +2,8 @@
 
 @{
     Layout = "_EquipmentLayout.cshtml";
+    ViewBag.Title = "Index";
 }
-
 
 <h2>Index</h2>
 
@@ -12,14 +12,33 @@
 </p>
 <table class="table">
     <tr>
+        
+        <th>
+            @Html.DisplayNameFor(model => model.CreateID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MachineID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmployeeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DepartmentName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WifiSSID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IpAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Open_)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Optimization)
+        </th>
         <th>
             @Html.DisplayNameFor(model => model.AlgorithmName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.HyperparameterName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CrossName)
         </th>
     </tr>
 
@@ -27,15 +46,33 @@
     {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.AlgorithmName)
+                @Html.DisplayFor(modelItem => item.CreateID)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.HyperparameterName)
+                @Html.DisplayFor(modelItem => item.MachineID)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CrossName)
+                @Html.DisplayFor(modelItem => item.EmployeeName)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.DepartmentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WifiSSID)
+            <td>
+                    @Html.DisplayFor(modelItem => item.IpAddress)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.Open_)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.Optimization)
+            </td>
+            <td>
+                    @Html.DisplayFor(modelItem => item.AlgorithmName)
+            </td>
+            
+            <td style="display:flex; gap:10px;">
                 @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
                 @Html.ActionLink("Details", "Details", new { id = item.ID }) |
                 @Html.ActionLink("Delete", "Delete", new { id = item.ID })

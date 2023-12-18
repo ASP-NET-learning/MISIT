@@ -3,8 +3,6 @@
     height: auto !important;
     font-family: 'Microsoft JhengHei';
     text-align: left;
-    display:flex;
-    gap:50px;
     margin:20px;
 }
 
@@ -26,10 +24,12 @@ a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.big-form{
+    display:flex;
+    gap:20px;
+    width: 100%;
+    height:auto;
+
 }
 
 fieldset {
@@ -71,7 +71,6 @@ input {
 }
 
 
-    
 
 
 .machine-navbar {

@@ -79,7 +79,7 @@ CREATE TABLE AiBom(
 
 
 -- 在 Machine 表中新增一筆資料
-INSERT INTO Machine (CreateID, CreatDate, ModifyDate, ModifyEmployeeID, MachineID, MachineClass, MachineName, SupervisorID, EmployeeName, DepartmentName, AddTime)
+INSERT INTO Machines (CreateID, CreatDate, ModifyDate, ModifyEmployeeID, MachineID, MachineClass, MachineName, SupervisorID, EmployeeName, DepartmentName, AddTime)
 VALUES ('A001', '2023-12-14', NULL, NULL, 'Mach001', '包裝機', 'MachineA', 'A001', 'John Doe', 'IT', '2023-12-14');
 
 -- 在 NetWork 表中新增一筆資料
@@ -95,7 +95,7 @@ INSERT INTO Ai (CreateID, CreatDate, MachineID, ModifyDate, ModifyEmployeeID, Al
 VALUES ('A001', '2023-12-14', 'Mach001', NULL, NULL, 'Machine Learning', 'LR', 'Y');
 
 
-SELECT * FROM Machine;
+SELECT * FROM Machines;
 SELECT * FROM NetWork;
 SELECT * FROM Operations;
 SELECT * FROM Ai;

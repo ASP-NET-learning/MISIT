@@ -1,0 +1,45 @@
+﻿@model CookiesSalesSystem.Models.AiBom
+
+@{
+    ViewBag.Title = "MachineDetails";
+    Layout = "_EquipmentLayout.cshtml";
+}
+
+<h2>MachineDetails</h2>
+
+<div>
+    <h4>BOM</h4>
+    <hr />
+    <table class="table-bordered">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.MachineID)</th>
+                <th>@Html.DisplayNameFor(model => model.MachineClass)</th>
+                <th>@Html.DisplayNameFor(model => model.MachineName)</th>
+                <th>@Html.DisplayNameFor(model => model.SupervisorID)</th>
+                <th>@Html.DisplayNameFor(model => model.EmployeeName)</th>
+                <th>@Html.DisplayNameFor(model => model.DepartmentName)</th>
+                <th>@Html.DisplayNameFor(model => model.AddTime)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Html.DisplayFor(model => model.MachineID)</td>
+                <td>@Html.DisplayFor(model => model.MachineClass)</td>
+                <td>@Html.DisplayFor(model => model.MachineName)</td>
+                <td>@Html.DisplayFor(model => model.SupervisorID)</td>
+                <td>@Html.DisplayFor(model => model.EmployeeName)</td>
+                <td>@Html.DisplayFor(model => model.DepartmentName)</td>
+                <td>@Html.DisplayFor(model => model.AddTime)</td>
+
+                
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+

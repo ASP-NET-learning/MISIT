@@ -1,0 +1,48 @@
+﻿@model CookiesSalesSystem.Models.AiBom
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "_EquipmentLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BOM</h4>
+    <hr />
+    <table class="table-bordered">
+        <thead>
+            <tr>
+
+                <th>@Html.DisplayNameFor(model => model.MachineID)</th>
+                <th>@Html.DisplayNameFor(model => model.WifiSSID)</th>
+                <th>@Html.DisplayNameFor(model => model.WifiPassword)</th>
+                <th>@Html.DisplayNameFor(model => model.IpAddress)</th>
+                <th>@Html.DisplayNameFor(model => model.SubnetMask)</th>
+                <th>@Html.DisplayNameFor(model => model.Gateway)</th>
+                <th>@Html.DisplayNameFor(model => model.Dns)</th>
+
+               
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Html.DisplayFor(model => model.MachineID)</td>
+                <td>@Html.DisplayFor(model => model.WifiSSID)</td>
+                <td>@Html.DisplayFor(model => model.WifiPassword)</td>
+                <td>@Html.DisplayFor(model => model.IpAddress)</td>
+                <td>@Html.DisplayFor(model => model.SubnetMask)</td>
+                <td>@Html.DisplayFor(model => model.Gateway)</td>
+                <td>@Html.DisplayFor(model => model.Dns)</td>
+
+               
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+

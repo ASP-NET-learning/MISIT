@@ -1,0 +1,78 @@
+﻿@model CookiesSalesSystem.Models.AiBom
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "_EquipmentLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BOM</h4>
+    <hr />
+    <table class="table-bordered">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.MachineID)</th>
+                <th>@Html.DisplayNameFor(model => model.MachineClass)</th>
+                <th>@Html.DisplayNameFor(model => model.MachineName)</th>
+                <th>@Html.DisplayNameFor(model => model.SupervisorID)</th>
+                <th>@Html.DisplayNameFor(model => model.EmployeeName)</th>
+                <th>@Html.DisplayNameFor(model => model.DepartmentName)</th>
+                <th>@Html.DisplayNameFor(model => model.AddTime)</th>
+
+                <th>@Html.DisplayNameFor(model => model.WifiSSID)</th>
+                <th>@Html.DisplayNameFor(model => model.WifiPassword)</th>
+                <th>@Html.DisplayNameFor(model => model.IpAddress)</th>
+                <th>@Html.DisplayNameFor(model => model.SubnetMask)</th>
+                <th>@Html.DisplayNameFor(model => model.Gateway)</th>
+                <th>@Html.DisplayNameFor(model => model.Dns)</th>
+
+                <th>@Html.DisplayNameFor(model => model.Open_)</th>
+                <th>@Html.DisplayNameFor(model => model.Speed)</th>
+                <th>@Html.DisplayNameFor(model => model.Optimization)</th>
+
+                <th>@Html.DisplayNameFor(model => model.AlgorithmName)</th>
+                <th>@Html.DisplayNameFor(model => model.HyperparameterName)</th>
+                <th>@Html.DisplayNameFor(model => model.CrossName)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Html.DisplayFor(model => model.MachineID)</td>
+                <td>@Html.DisplayFor(model => model.MachineClass)</td>
+                <td>@Html.DisplayFor(model => model.MachineName)</td>
+                <td>@Html.DisplayFor(model => model.SupervisorID)</td>
+                <td>@Html.DisplayFor(model => model.EmployeeName)</td>
+                <td>@Html.DisplayFor(model => model.DepartmentName)</td>
+                <td>@Html.DisplayFor(model => model.AddTime)</td>
+
+                <td>@Html.DisplayFor(model => model.WifiSSID)</td>
+                <td>@Html.DisplayFor(model => model.WifiPassword)</td>
+                <td>@Html.DisplayFor(model => model.IpAddress)</td>
+                <td>@Html.DisplayFor(model => model.SubnetMask)</td>
+                <td>@Html.DisplayFor(model => model.Gateway)</td>
+                <td>@Html.DisplayFor(model => model.Dns)</td>
+
+                <td>@Html.DisplayFor(model => model.Open_)</td>
+                <td>@Html.DisplayFor(model => model.Speed)</td>
+                <td>@Html.DisplayFor(model => model.Optimization)</td>
+
+                <td>@Html.DisplayFor(model => model.AlgorithmName)</td>
+                <td>@Html.DisplayFor(model => model.HyperparameterName)</td>
+                <td>@Html.DisplayFor(model => model.CrossName)</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+@* CreateID, CreatDate, ModifyDate, ModifyEmployeeID,
+ MachineID, MachineClass, MachineName, SupervisorID, EmployeeName, DepartmentName, AddTime,
+WifiSSID, WifiPassword, IpAddress, SubnetMask, Gateway, Dns,
+Open_, Speed, Optimization,
+AlgorithmName, HyperparameterName, CrossName *@
