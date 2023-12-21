@@ -4,74 +4,168 @@
 }
 
 
-<div class="flexrow">
+<div class="hello">
+    <i id="timeIcon" class=""></i>
+    <a id="greeting"></a>
+    <a id="">Faker</a>
+    <a id="timeDisplay">目前時間為:  </a>
+</div>
 
-    <div class="flexcard">
-        <!--修改成Navbar放進Layout-->
-        <div class="left">
-            <div class="side-menu">
-                @Html.Partial("_LeftSideMenu.cshtml")
-            </div>
-        </div>
+<div class="overview">
+    <a>|</a>
+    <a>數據一覽</a>
+</div>
 
-        <div class="right">
-            <div class="welcome">
-                <h1>歡迎來到管理系統</h1>
-                <hr />
-                <div class="bulletin-board">
-                    <h2>公告欄</h2>
-                    <div class="search-group">
-                        <div class="search-item">
-                            <h4>依日期搜尋</h4>
-                            <input type="date" id="search-date" class="search-date" />
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </div>
-                        <div class="search-item">
-                            <h4>依標題查詢</h4>
-                            <input type="text" id="search-title" class="search-title" />
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </div>
-                        <div class="search-item">
-                            <h4>依程度查詢</h4>
-                            <input type="text" id="search-level" class="search-level" />
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </div>
-
-
-                    </div>
-                    <div class="head">
-                        <div class="head-left">
-                            <h5>最新消息</h5>
-                        </div>
-                        <div class="head-right">
-                            <h5>總筆數:1</h5>
-                        </div>
-                    </div>
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">公告日期</th>
-                                <th scope="col">公告單位</th>
-                                <th scope="col">公告人</th>
-                                <th scope="col">標題</th>
-                                <th scope="col">緊急程度</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">2023/12/23</th>
-                                <td>秘書室</td>
-                                <td>總裁</td>
-                                <td>加班辛苦了</td>
-                                <td>一般</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
+<div class="overview-group">
+    <div class="income">
+        <p>今日收入(NT)元</p>
+        <div class="income-card">
+            <h3>123,456,789</h3>
+            <p>較昨日 + 88%</p>
         </div>
     </div>
 
+    <div class="TodayOrder">
+        <p>今日訂單(張)</p>
+        <div class="income-card">
+            <h3>666</h3>
+            <p>較近一周 + 60張</p>
+        </div>
+    </div>
 
+    <div class="NewMember">
+        <p>新增會員</p>
+        <div class="income-card">
+            <h3>100</h3>
+            <p>較近一周 + 3位</p>
+        </div>
+    </div>
+
+    <div class="ActiveUser">
+        <p>活躍會員</p>
+        <div class="income-card">
+            <h3>2324</h3>
+            <p>較近一周 + 7位</p>
+        </div>
+    </div>
+</div>
+
+<div class="overview">
+    <a>|</a>
+    <a>機器數據一覽</a>
+</div>
+
+<div class="overview-group">
+    <div class="income">
+        <p>全體機器溫度平均(˚C)</p>
+        <div class="income-card">
+            <h3>28.4</h3>
+            <p>較歷史平均 +0.3 度</p>
+        </div>
+    </div>
+
+    <div class="TodayOrder">
+        <p>產品不良率</p>
+        <div class="income-card">
+            <h3>2%</h3>
+            <p>較歷史 - 3%</p>
+        </div>
+    </div>
+
+    <div class="NewMember">
+        <p>故障機器</p>
+        <div class="income-card">
+            <h3>1台</h3>
+            <p>較歷史 + 1 台</p>
+        </div>
+    </div>
+
+    <div class="ActiveUser">
+        <p>維修中機器</p>
+        <div class="income-card">
+            <h3>12</h3>
+            <p>較歷史 + 5 台</p>
+        </div>
+    </div>
+</div>
+
+<div class="overview">
+    <a>|</a>
+    <a>最近公告</a>
+</div>
+
+<div class="bulletin board">
+    <table id="customers">
+        <tr>
+            <th>公告單位</th>
+            <th>公告時間</th>
+            <th>公告標題</th>
+            <th>緊急程度</th>
+            <th>觀看人數</th>
+        </tr>
+        <tr>
+            <td>人資室</td>
+            <td>1998/01/01</td>
+            <td>新進人員須知!!!!</td>
+            <td>一般</td>
+            <td>40000</td>
+        </tr>
+        <tr>
+            <td>資訊部</td>
+            <td>2023/02/28</td>
+            <td>連假時段輪班表</td>
+            <td>一般</td>
+            <td>3000</td>
+        </tr>
+        <tr>
+            <td>生產部</td>
+            <td>2023/05/05</td>
+            <td>生產知多少</td>
+            <td>一般</td>
+            <td>389</td>
+        </tr>
+        <tr>
+            <td>福利部</td>
+            <td>2023/12/01</td>
+            <td>福利連熊福利!寒冬送暖活動開跑</td>
+            <td>一般</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td>資訊部</td>
+            <td>2023/12/02</td>
+            <td>系統搶修公告!!</td>
+            <td>緊急</td>
+            <td>9999</td>
+        </tr>
+        <tr>
+            <td>資訊部</td>
+            <td>2023/12/03</td>
+            <td>系統搶修進度公告!!</td>
+            <td>緊急</td>
+            <td>4000</td>
+        </tr>
+        <tr>
+            <td>資訊部</td>
+            <td>2023/12/03</td>
+            <td>系統搶修進度公告(2)!!</td>
+            <td>緊急</td>
+            <td>2999</td>
+        </tr>
+        <tr>
+            <td>資訊部</td>
+            <td>2023/12/03</td>
+            <td>系統已回復</td>
+            <td>一般</td>
+            <td>598</td>
+        </tr>
+        <tr>
+            <td>秘書室</td>
+            <td>2023/12/04</td>
+            <td>懲處公告!關於系統破壞者XXX絕不寬貸</td>
+            <td>一般</td>
+            <td>78</td>
+        </tr>
+        
+    </table>
 </div>

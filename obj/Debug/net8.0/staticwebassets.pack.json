@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\CookiesSalesSystem.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\Systemcss.css",
+      "PackagePath": "staticwebassets\\css\\Systemcss.css"
+    },
+    {
       "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\authoritycss.css",
       "PackagePath": "staticwebassets\\css\\authoritycss.css"
     },
@@ -31,10 +35,6 @@
     {
       "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
-    },
-    {
-      "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\system.css",
-      "PackagePath": "staticwebassets\\css\\system.css"
     },
     {
       "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\favicon.ico",
@@ -83,6 +83,10 @@
     {
       "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\image\\肉桂天堂.jpg",
       "PackagePath": "staticwebassets\\image\\肉桂天堂.jpg"
+    },
+    {
+      "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\js\\System.js",
+      "PackagePath": "staticwebassets\\js\\System.js"
     },
     {
       "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\js\\authority.js",

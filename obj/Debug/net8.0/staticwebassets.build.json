@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MEBCzageNGOQ6hhup/hXKmAZ5dK8FfPYolDmCT9gfyc=",
+  "Hash": "OdrryjjS0OxnDmNyeFCbCxLkpe+n1kKiqfugsHFLYHA=",
   "Source": "CookiesSalesSystem",
   "BasePath": "_content/CookiesSalesSystem",
   "Mode": "Default",
@@ -188,12 +188,12 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\system.css",
+      "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\Systemcss.css",
       "SourceId": "CookiesSalesSystem",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\",
       "BasePath": "_content/CookiesSalesSystem",
-      "RelativePath": "css/system.css",
+      "RelativePath": "css/Systemcss.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -204,7 +204,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\system.css"
+      "OriginalItemSpec": "wwwroot\\css\\Systemcss.css"
     },
     {
       "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\favicon.ico",
@@ -528,6 +528,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\situationroom.js"
+    },
+    {
+      "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\js\\System.js",
+      "SourceId": "CookiesSalesSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\",
+      "BasePath": "_content/CookiesSalesSystem",
+      "RelativePath": "js/System.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\System.js"
     },
     {
       "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
