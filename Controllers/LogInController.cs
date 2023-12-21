@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using CookiesSalesSystem.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace CookiesSalesSystem.Controllers
 {
@@ -8,5 +11,7 @@ namespace CookiesSalesSystem.Controllers
         {
             return View();
         }
+
+        
     }
 }

@@ -21,6 +21,21 @@ namespace CookiesSalesSystem.Controllers
             return View(_context.AiBom.ToList());
         }
 
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var AiBomDetails = _context.AiBom.FirstOrDefault(m => m.ID == id);
+            if (AiBomDetails == null)
+            {
+                return NotFound();
+            }
+
+            return View(AiBomDetails);
+        }
+
         // GET: Equipment/OverviewDetails/1
         public ActionResult OverviewDetails(int? id)
         {

@@ -5,8 +5,8 @@
       "PackagePath": "staticwebassets\\CookiesSalesSystem.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\authority.css",
-      "PackagePath": "staticwebassets\\css\\authority.css"
+      "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\authoritycss.css",
+      "PackagePath": "staticwebassets\\css\\authoritycss.css"
     },
     {
       "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\equipment.css",
@@ -21,16 +21,16 @@
       "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
+      "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\room.css",
+      "PackagePath": "staticwebassets\\css\\room.css"
+    },
+    {
       "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\search.css",
       "PackagePath": "staticwebassets\\css\\search.css"
     },
     {
       "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
-    },
-    {
-      "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\situationroom.css",
-      "PackagePath": "staticwebassets\\css\\situationroom.css"
     },
     {
       "Id": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\system.css",

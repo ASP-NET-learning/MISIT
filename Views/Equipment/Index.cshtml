@@ -73,11 +73,10 @@
             </td>
             
             <td style="display:flex; gap:10px;">
-                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                @Html.ActionLink("Details", "OverviewDetails", new { id = item.ID })
             </td>
         </tr>
     }
 
 </table>
+

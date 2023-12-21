@@ -15,6 +15,7 @@ a {
 .machine-navbar {
     display: flex;
     gap: 20px;
+
 }
 
     .machine-navbar div {

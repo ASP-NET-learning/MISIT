@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ID84bcp5kKERARq96/9Fhv6JlXLWzVzLHfIJUXLlEYw=",
+  "Hash": "MEBCzageNGOQ6hhup/hXKmAZ5dK8FfPYolDmCT9gfyc=",
   "Source": "CookiesSalesSystem",
   "BasePath": "_content/CookiesSalesSystem",
   "Mode": "Default",
@@ -55,12 +55,12 @@
       "OriginalItemSpec": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CookiesSalesSystem.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\authority.css",
+      "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\authoritycss.css",
       "SourceId": "CookiesSalesSystem",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\",
       "BasePath": "_content/CookiesSalesSystem",
-      "RelativePath": "css/authority.css",
+      "RelativePath": "css/authoritycss.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,7 +71,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\authority.css"
+      "OriginalItemSpec": "wwwroot\\css\\authoritycss.css"
     },
     {
       "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\equipment.css",
@@ -131,6 +131,25 @@
       "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
+      "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\room.css",
+      "SourceId": "CookiesSalesSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\",
+      "BasePath": "_content/CookiesSalesSystem",
+      "RelativePath": "css/room.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\room.css"
+    },
+    {
       "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\search.css",
       "SourceId": "CookiesSalesSystem",
       "SourceType": "Discovered",
@@ -167,25 +186,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
-    },
-    {
-      "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\situationroom.css",
-      "SourceId": "CookiesSalesSystem",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\",
-      "BasePath": "_content/CookiesSalesSystem",
-      "RelativePath": "css/situationroom.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\situationroom.css"
     },
     {
       "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\system.css",

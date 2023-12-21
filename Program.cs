@@ -1,4 +1,6 @@
 using CookiesSalesSystem.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<masterContext>(options => options.UseSqlServer(
         builder.Configuration.GetConnectionString("masterContext")));
+
 
 var app = builder.Build();
 
@@ -23,12 +26,16 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseCookiePolicy();
+app.UseAuthentication();
+app.UseAuthorization();
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
     //name: "default",
     //pattern: "{controller=Home}/{action=Index}/{id?}");
-    name: "System",
-    pattern: "{controller=System}/{action=Index}/{id?}");
+    name: "Cookies",
+    pattern: "{controller=Cookies}/{action=Index}/{id?}");
 
 app.Run();

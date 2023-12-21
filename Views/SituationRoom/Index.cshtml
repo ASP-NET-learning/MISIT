@@ -78,30 +78,25 @@
 </script>
 
 <div class="machine-navbar">
-    <div onclick="changeStyle(0)">自選</div>
-    <div onclick="changeStyle(1)">所有號機器</div>
-    <div onclick="changeStyle(2)">號機器稼動率</div>
-    <div onclick="changeStyle(3)">目前維修號機器</div>
-    <div onclick="changeStyle(4)">號機器設定</div>
-    <div onclick="changeStyle(5)">機器排程</div>
+    <div onclick="changeStyle(0)">
+        <a asp-area="" asp-controller="" asp-action="">自選</a>
+    </div>
+    <div onclick="changeStyle(1)">
+        <a asp-area="" asp-controller="" asp-action="">所有號機器</a>
+    </div>
+    <div onclick="changeStyle(2)">
+        <a asp-area="" asp-controller="" asp-action="">機器稼動率</a>
+    </div>
+    <div onclick="changeStyle(3)">
+        <a asp-area="" asp-controller="" asp-action="">目前維修機器</a>
+    </div>
+    <div onclick="changeStyle(4)">
+        <a asp-area="" asp-controller="" asp-action="">機器設定</a>
+    </div>
+    <div onclick="changeStyle(5)">
+        <a asp-area="" asp-controller="" asp-action="">機器排程</a>
+    </div>
 </div>
-
-<script>
-    var currentActiveIndex = null;
-
-    function changeStyle(index) {
-        // 移除前一個 active 元素的樣式
-        if (currentActiveIndex !== null) {
-            document.querySelector('.machine-navbar div:nth-child(' + (currentActiveIndex + 1) + ')').classList.remove('active');
-        }
-
-        // 添加新 active 元素的樣式
-        document.querySelector('.machine-navbar div:nth-child(' + (index + 1) + ')').classList.add('active');
-
-        // 更新當前 active 元素的索引
-        currentActiveIndex = index;
-    }
-</script>
 
 <div class="machine-banner">
     <h3>公告</h3>
@@ -115,7 +110,7 @@
             @foreach (var machine in Model)
             {
                 <tr>
-                    <td rowspan="4">@machine.AiMachine</td>
+                    <td rowspan="12">@machine.AiMachine</td>
                     <td>機器1</td>
                     <td>@Math.Round(machine.MachineValue[0], 2)</td>
                 </tr>
@@ -130,6 +125,38 @@
                 <tr>
                     <td>機器4</td>
                     <td>@Math.Round(machine.MachineValue[3], 2)</td>
+                </tr>
+                <tr>
+                    <td>機器5</td>
+                    <td>@Math.Round(machine.MachineValue[4], 2)</td>
+                </tr>
+                <tr>
+                    <td>機器6</td>
+                    <td>@Math.Round(machine.MachineValue[5], 2)</td>
+                </tr>
+                <tr>
+                    <td>機器7</td>
+                    <td>@Math.Round(machine.MachineValue[6], 2)</td>
+                </tr>
+                <tr>
+                    <td>機器8</td>
+                    <td>@Math.Round(machine.MachineValue[7], 2)</td>
+                </tr>
+                <tr>
+                    <td>機器9</td>
+                    <td>@Math.Round(machine.MachineValue[8], 2)</td>
+                </tr>
+                <tr>
+                    <td>機器10</td>
+                    <td>@Math.Round(machine.MachineValue[9], 2)</td>
+                </tr>
+                <tr>
+                    <td>機器11</td>
+                    <td>@Math.Round(machine.MachineValue[10], 2)</td>
+                </tr>
+                <tr>
+                    <td>機器12</td>
+                    <td>@Math.Round(machine.MachineValue[11], 2)</td>
                 </tr>
             }
         </table>
