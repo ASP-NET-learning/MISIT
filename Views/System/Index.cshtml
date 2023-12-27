@@ -1,4 +1,4 @@
-﻿﻿@{
+﻿@{
     ViewData["Title"] = "SalesSystem";
     Layout = "./_SystemLayout";
 }
@@ -7,7 +7,7 @@
 <div class="hello">
     <i id="timeIcon" class=""></i>
     <a id="greeting"></a>
-    <a id="">Faker</a>
+    <a id="">聖誕小章魚</a>
     <a id="timeDisplay">目前時間為:  </a>
 </div>
 
@@ -20,7 +20,7 @@
     <div class="income">
         <p>今日收入(NT)元</p>
         <div class="income-card">
-            <h3>123,456,789</h3>
+            <h3 class="number">123,456,789</h3>
             <p>較昨日 + 88%</p>
         </div>
     </div>
@@ -169,3 +169,21 @@
         
     </table>
 </div>
+
+<script>
+    var $number = $(".number");
+    var originalNumber = parseInt($number.text());
+    var finalNumber = 123,456, 789;
+    var duration = 3000; // 动画持续时间，单位为毫秒
+
+    $({ numberValue: originalNumber }).animate({ numberValue: finalNumber }, {
+        duration: duration,
+        easing: 'swing', // 缓动函数，可选 linear/easeOutQuad 等
+        step: function () {
+            $number.text(Math.ceil(this.numberValue)); // 向上取整，使数字递增
+        },
+        complete: function () {
+            $number.text(finalNumber); // 动画完成后设置最终值
+        }
+    });
+</script>

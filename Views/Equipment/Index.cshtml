@@ -5,10 +5,10 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>設備管理</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("新增機器設定", "Create")
 </p>
 <table class="table">
     <tr>
@@ -73,7 +73,7 @@
             </td>
             
             <td style="display:flex; gap:10px;">
-                @Html.ActionLink("Details", "OverviewDetails", new { id = item.ID })
+                @Html.ActionLink("詳細", "OverviewDetails", new { id = item.ID })
             </td>
         </tr>
     }

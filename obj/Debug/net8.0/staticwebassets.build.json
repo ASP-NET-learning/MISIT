@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OdrryjjS0OxnDmNyeFCbCxLkpe+n1kKiqfugsHFLYHA=",
+  "Hash": "EEBFfk9s97onfZl84ra9FifrtYcwCc9Y9dlXBlk6P5M=",
   "Source": "CookiesSalesSystem",
   "BasePath": "_content/CookiesSalesSystem",
   "Mode": "Default",
@@ -55,12 +55,12 @@
       "OriginalItemSpec": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CookiesSalesSystem.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\authoritycss.css",
+      "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\authorize.css",
       "SourceId": "CookiesSalesSystem",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\",
       "BasePath": "_content/CookiesSalesSystem",
-      "RelativePath": "css/authoritycss.css",
+      "RelativePath": "css/authorize.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,7 +71,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\authoritycss.css"
+      "OriginalItemSpec": "wwwroot\\css\\authorize.css"
     },
     {
       "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\css\\equipment.css",
@@ -473,6 +473,25 @@
       "OriginalItemSpec": "wwwroot\\js\\index.js"
     },
     {
+      "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\js\\jquery-3.7.1.min.js",
+      "SourceId": "CookiesSalesSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\",
+      "BasePath": "_content/CookiesSalesSystem",
+      "RelativePath": "js/jquery-3.7.1.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery-3.7.1.min.js"
+    },
+    {
       "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\js\\search.js",
       "SourceId": "CookiesSalesSystem",
       "SourceType": "Discovered",
@@ -547,6 +566,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\System.js"
+    },
+    {
+      "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\js\\新增 文字文件.txt",
+      "SourceId": "CookiesSalesSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\",
+      "BasePath": "_content/CookiesSalesSystem",
+      "RelativePath": "js/新增 文字文件.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\新增 文字文件.txt"
     },
     {
       "Identity": "C:\\Users\\klas9\\source\\repos\\CookiesSalesSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

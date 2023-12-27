@@ -50,6 +50,7 @@ CREATE TABLE Ai(
 	CrossName char(1)
 );*/
 
+/*
 CREATE TABLE AiBom(
 	ID INT PRIMARY KEY IDENTITY(1,1),
 	CreateID varchar(255),
@@ -75,7 +76,7 @@ CREATE TABLE AiBom(
 	AlgorithmName  varchar(20),
 	HyperparameterName varchar(5),
 	CrossName char(1)
-)
+)*/
 
 
 -- 在 Machine 表中新增一筆資料
